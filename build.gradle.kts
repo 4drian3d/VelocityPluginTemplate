@@ -5,12 +5,7 @@ plugins {
 }
 
 repositories {
-    maven("https://repo.papermc.io/repository/maven-public/") {
-        content {
-            includeGroup("com.velocitypowered")
-        }
-    }
-    mavenCentral()
+    maven("https://repo.papermc.io/repository/maven-public/")
 }
 
 dependencies {
@@ -33,9 +28,8 @@ tasks {
 }
 
 blossom {
-    replaceTokenIn("src/main/java/your/packagehere/Constants.java")
+    replaceTokenIn("src/main/java/io/github/_4drian3d/Constants.java")
     replaceToken("{version}", project.version)
 }
 
 java.toolchain.languageVersion.set(JavaLanguageVersion.of(11))
-
