@@ -3,12 +3,12 @@ metadata.format.version = "1.1"
 [versions]
 
 # CompileOnly dependencies
-velocity = "3.3.0-SNAPSHOT"
+velocity = "3.4.0-SNAPSHOT"
 
 # Gradle Plugins
 blossom = "2.1.0"
-shadow = "8.1.1"
-runvelocity = "2.2.3"
+shadow = "8.3.3"
+runvelocity = "2.3.1"
 
 # Utility Libraries
 bstats = "3.0.2"
@@ -23,6 +23,6 @@ bstats = { module = "org.bstats:bstats-velocity", version.ref = "bstats" }
 [plugins]
 
 blossom = { id = "net.kyori.blossom", version.ref = "blossom" }
-shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
 runvelocity = { id = "xyz.jpenilla.run-velocity", version.ref = "runvelocity" }
-idea-ext = { id = "org.jetbrains.gradle.plugin.idea-ext", version = "1.1.7" }
+idea-ext = { id = "org.jetbrains.gradle.plugin.idea-ext", version = "1.1.9" }
