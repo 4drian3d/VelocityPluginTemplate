@@ -4,7 +4,7 @@ import com.google.inject.Inject;
 import com.velocitypowered.api.event.Subscribe;
 import com.velocitypowered.api.event.proxy.ProxyInitializeEvent;
 import com.velocitypowered.api.plugin.Plugin;
-import org.slf4j.Logger;
+import net.kyori.adventure.text.logger.slf4j.ComponentLogger;
 
 @Plugin(
 	id = "velocityplugin",
@@ -15,7 +15,7 @@ import org.slf4j.Logger;
 )
 public final class VelocityPlugin {
 	@Inject
-	private Logger logger;
+	private ComponentLogger logger;
 	
 	@Subscribe
 	void onProxyInitialization(final ProxyInitializeEvent event) {
