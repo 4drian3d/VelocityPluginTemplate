@@ -13,12 +13,17 @@ runtask = "3.0.0"
 # Utility Libraries
 bstats = "3.0.2"
 
+# Plugin Dependencies
+miniplaceholders = "3.0.1"
+
 [libraries]
 
 # Compile Only Dependencies
 velocity = { group = "com.velocitypowered", name = "velocity-api", version.ref = "velocity" }
 
 bstats = { module = "org.bstats:bstats-velocity", version.ref = "bstats" }
+
+miniplaceholders = { group = "io.github.miniplaceholders", name = "miniplaceholders-api", version.ref = "miniplaceholders" }
 
 [plugins]
 
